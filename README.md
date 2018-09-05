@@ -34,7 +34,7 @@ Here's how OmniAuth works from the user's standpoint:
   4. If the user is not already signed in to Google, they sign in normally. More likely, they are already signed in, so Google simply asks if it's okay to let `yoursite.com` access the user's information. The user agrees.
   5. They are (hopefully quickly) redirected to `yoursite.com/auth/google/callback` and, from there, to the page they initially tried to access.
 
-Let's see how this works in practice. da
+Let's see how this works in practice.
 
 ## OmniAuth with Facebook
 The OmniAuth gem allows us to use the OAuth protocol with a number of different providers. All we need to do is add the OmniAuth gem *and* the provider-specific OmniAuth gem (e.g., `omniauth-google`) to our Gemfile. In some cases, adding only the provider-specific gem will suffice because it will install the OmniAuth gem as a dependency, but it's safer to add both — the shortcut is far from universal.
